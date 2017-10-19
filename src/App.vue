@@ -4,8 +4,10 @@
     <input type="text" class="text" :value="newTodo" @change="getTodo" placeholder="Add todo here">
     <button @click="addTodo">Add Todo</button>
     <h3 v-if="todos.length>0">Tasks - {{todos.length}}</h3>
-    <div v-for="todo in todos" :key="todo.id">
-      {{todo.body}}
+    <div>
+      <li v-for="todo in todos" :key="todo.id">
+      {{todo.body}} 
+      </li>
     </div>
   </div>
 </template>

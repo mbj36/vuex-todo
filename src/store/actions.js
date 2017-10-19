@@ -1,6 +1,6 @@
 export default {
     getTodo({commit}, todo){
-        commit('GET_TODO', todo)
+        commit('GET_TODO', todo.target.value)
     },
     addTodo({commit}){
         commit('ADD_TODO')
